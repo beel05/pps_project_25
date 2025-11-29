@@ -3,8 +3,8 @@
 #define ITEM_H
 
 typedef struct {
-    char name[50];
-    int days;          
+    char name[50];//intialising 
+    int days;  //initialising    
     double *sales;      
 double leadTime;    
 } Item;
@@ -18,5 +18,6 @@ double compute_mape(double *actual, double *forecast, int n);
 double compute_stddev(double *sales, int n);
 
 #endif
+
 
 
