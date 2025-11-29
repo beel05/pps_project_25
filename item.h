@@ -3,10 +3,10 @@
 #define ITEM_H
 
 typedef struct {
-    char name[50];//intialising 
-    int days;    
-    double *sales;      
-double leadTime;    
+    char name[50];
+    int days;               //number of historical days 
+    double *sales;          //dynamic array for daily sales
+double leadTime;            //lead time in days
 } Item;
 
 
@@ -18,6 +18,7 @@ double compute_mape(double *actual, double *forecast, int n);
 double compute_stddev(double *sales,int n);
 
 #endif
+
 
 
 
