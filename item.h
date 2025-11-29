@@ -19,3 +19,4 @@ double compute_stddev(double *sales, int n);
 
 #endif
 
+
