@@ -23,13 +23,14 @@ double weighted_moving_average(double *sales, int n, int window) {
     int i;
     int w = 1;
 
-for (i = n - window; i< n; i++) {
+for (i = n - window; i < n; i++) {
     weightedSum += w * sales[i];
     weightTotal += w;
     w++;
     }
     return weightedSum / weightTotal;
 }
+
 
 
 
