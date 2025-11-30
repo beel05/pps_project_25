@@ -30,7 +30,7 @@ int main(void) {
     }
 
     // Allocate memory for sales
-    //item.sales = (double *)malloc(item.days * sizeof(double));
+    item.sales = (double *)malloc(item.days * sizeof(double));
     if (item.sales == NULL) {
         printf("Memory allocation failed.\n");
         return 0;
@@ -137,6 +137,7 @@ int main(void) {
     printf("\n=== End of Forecast ===\n");
     return 0;
 }
+
 
 
 
