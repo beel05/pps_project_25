@@ -15,7 +15,7 @@ double moving_average(double *sales, int n, int window) {
 }
 
 //Weighted moving average: weights 1,2,....,window(most recent has max weight)
-double weighted_moving_average(doule *sales, int n, int window) {
+double weighted_moving_average(double *sales, int n, int window) {
  if (window <= 0 || window > n) return 0.0;
 
  double weightedSum = 0.0;
@@ -30,6 +30,7 @@ for (i = n - window; i < n; i++) {
     }
     return weightedSum / weightTotal;
 }
+
 
 
 
