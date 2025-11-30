@@ -12,7 +12,7 @@ int main(void) {
     int window;
     int currentStock;
 
-    printf("=== Inventory Forecasting Tool ===\n\n");
+    printf("===== Inventory Forecasting Tool =====\n\n");
 
     // Get item name
     printf("Enter item name: ");
@@ -122,11 +122,11 @@ int main(void) {
         reorderIn = 0; // reorder immediately
     }
 
-    printf("\n=== Inventory Recommendations for item: %s ===\n", item.name);
-    printf("Lead time (days): %.2f\n", item.leadTime);
-    printf("Safety stock (approx): %.2f units\n", safetyStock);
-    printf("Reorder level: %.2f units\n", reorderLevel);
-    printf("Current stock: %d units\n", currentStock);
+    printf("\n===== Inventory Recommendations for item: %s =====\n", item.name);
+    printf("Lead Time (days): %.2f\n", item.leadTime);
+    printf("Safety Stock (approx): %.2f units\n", safetyStock);
+    printf("Reorder Level: %.2f units\n", reorderLevel);
+    printf("Current Stock: %d units\n", currentStock);
     printf("Suggested order quantity: %.0f units\n", ceil(orderQty));
     printf("Expected days until stock-out: %.1f days\n", daysUntilStockOut);
     printf("Suggested reorder time: in %.1f days (0 = reorder now)\n", reorderIn);
@@ -137,6 +137,7 @@ int main(void) {
     printf("\n=== End of Forecast ===\n");
     return 0;
 }
+
 
 
 
